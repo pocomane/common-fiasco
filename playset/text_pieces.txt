@@ -1,0 +1,18 @@
+
+#Fiasco-Credit
+
+This game is strongly inspired by Fiasco Classic, that was created by Jason
+Morningstar and released in 2009 by Bully Pulprit.
+
+#Rule-license
+
+The game rule system is released under Creative Commons 0 (practically
+equivelt to the Public Domain).
+
+#Scenarios
+
+In this section there are some scenarios ready to be played with the Common
+Fiasco system. Altenatively you can use them to generate your customized
+scenarios. Please refer to the Common Fiasco section for the full rule
+description.
+
