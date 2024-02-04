@@ -73,16 +73,34 @@ local function render(x)
       <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <style type="text/css">
+        :root {
+          --FSA: 5.6mm;
+          --FSB: 4.9mm;
+          --FSC: 4.6mm;
+          --FSD: 3.2mm;
+          --FSE: 2.8mm;
+        }
+        @font-face {
+          font-family: "thefont";
+          src: url(../util/gentium.ttf) format("truetype");
+        }
         @page {
-          size: A4;
-          margin-left: 75pt;
-          margin-right: 75pt;
-          margin-bottom: 75pt;
-          margin-top: 60pt;
+          size: A5;
+          margin-bottom: 17mm;
+          margin-top: 12mm;
+        }
+        @page :left {
+          margin-left: 23mm;
+          margin-right: 20mm;
+        }
+        @page :right {
+          margin-left: 20mm;
+          margin-right: 23mm;
         }
         body {
-          font: 12pt "Sans";
-          line-height: 14pt;
+          font-family: "thefont";
+          font-size: var(--FSD);
+          line-height: var(--FSC);
           text-align: justify;
         }
         /*
@@ -100,48 +118,47 @@ local function render(x)
         }
         .ItemPlayer {
           text-transform: uppercase;
-          font: 10pt "Sans";
+          font-size: var(--FSE);
           padding-left: 30pt;
           margin: 4pt;
         }
         strong {
-          font-weight: normal;
           text-transform: uppercase;
-          font: 10pt "Sans";
+          font-size: var(--FSE);
           margin-left: 5pt;
           margin-right: 5pt;
         }
         h1 {
           text-align: center;
           text-transform: uppercase;
-          font: 16pt "Sans";
+          font-size: var(--FSB);
         }
         h2 {
           text-align: center;
           text-transform: uppercase;
-          font: 12pt "Sans";
+          font-size: var(--FSD);
         }
         h3 {
           text-transform: uppercase;
-          font: 12pt "Sans";
+          font-size: var(--FSD);
         }
         h1:first-letter {
-          font: 18pt "Sans";
+          font-size: var(--FSA);
         }
         h2:first-letter {
-          font: 14pt "Sans";
+          font-size: var(--FSC);
         }
         h3:first-letter {
-          font: 14pt "Sans";
+          font-size: var(--FSC);
         }
         h1:first-letter {
-          font: 18pt "Sans";
+          font-size: var(--FSA);
         }
         h2:first-letter {
-          font: 16pt "Sans";
+          font-size: var(--FSB);
         }
         h3:first-letter {
-          font: 14pt "Sans";
+          font-size: var(--FSC);
         }
       </style>    
   </head>
